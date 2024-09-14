@@ -10,9 +10,7 @@ function WorkMethod() {
         position: "relative",
         display: "flex",
         alignItems: "center",
-        width: "100vw",
-        // height: "200vh",
-        display: "flex",
+        width: "Calc(100vw - 20px)",
         backgroundColor: "primary.background",
       }}
       data-aos="fade-up"
@@ -37,7 +35,19 @@ function WorkMethod() {
                   {/* a vertical green line */}
                 </Typography>
               </Box>
-              <Box component={"img"} src={WorkProcess} alt="work process" sx={{ width: { xs: "100%", lg: "500px" }, height: "100%", objectFit: "cover", objectPosition: "center", borderRadius: "10px" }} />
+              <Box
+                component={"img"}
+                src={WorkProcess}
+                alt="work process"
+                sx={{
+                  filter: "grayscale(100%)",
+                  width: { xs: "100%", lg: "500px" },
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  borderRadius: "10px",
+                }}
+              />
             </Box>
 
             {/* RIGHT SIDE */}

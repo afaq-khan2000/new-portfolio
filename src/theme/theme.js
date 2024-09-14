@@ -9,19 +9,19 @@ const theme = createTheme({
       background: "#202020",
     },
     secondary: {
-      main: "#ffffff",
+      main: "#f9f9f9",
     },
   },
 
   typography: {
     fontFamily: "Tusker 3800",
     normal: {
-      fontFamily: "Inter sans-serif",
+      fontFamily: "Inter serif, sans-serif",
       letterSpacing: "1px",
       lineHeight: 1.5
     },
     bebus: {
-      fontFamily: "Bebas Neue Pro, sans-serif",
+      fontFamily: "Bebas Neue Pro, serif",
       letterSpacing: "1px",
       lineHeight: 1.5
     },

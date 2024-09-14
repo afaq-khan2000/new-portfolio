@@ -12,7 +12,7 @@ function Banner() {
       sx={{
         position: "relative",
         height: "100vh",
-        width: "100vw",
+        width: "calc(100vw - 20px)",
         display: "flex",
       }}
       data-aos="fade-up"
@@ -42,7 +42,7 @@ function Banner() {
         <Box sx={{ py: { xs: "10px", md: "30px" }, px: { xs: "10px", md: "30px" } }}>
           <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, justifyContent: { xs: "center", md: "space-between" }, alignItems: { xs: "center", md: "center" } }}>
             <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Box
+              {/* <Box
                 component="img"
                 src={NavLogo}
                 alt="logo"
@@ -52,7 +52,19 @@ function Banner() {
                   objectFit: "contain",
                   marginRight: "20px",
                 }}
-              />
+              /> */}
+              <Typography
+                variant="bebus"
+                sx={{
+                  color: "secondary.main",
+                  fontSize: { md: "36px", xs: "24px" },
+                  letterSpacing: "-3px",
+                  fontWeight: 700,
+                  marginRight: "20px",
+                }}
+              >
+                AFAQ KHAN
+              </Typography>
               <Typography
                 variant="normal"
                 sx={{

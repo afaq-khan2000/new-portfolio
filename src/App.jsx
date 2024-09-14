@@ -9,11 +9,11 @@ import "aos/dist/aos.css"; // Import AOS styles
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Set the global animation duration
+      duration: 1000, // Set the global animation duration
       mirror: false, // Allow animations to happen both on scroll down and up
       easing: "ease-in-out",
       once: false, // Allow animations to happen multiple times
-      delay: 100, // Set the delay between animations
+      delay: 300, // Set the delay between animations
     });
   }, []);
 

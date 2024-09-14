@@ -1,13 +1,14 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import { Banner, WorkMethod } from "../components/home";
+import { Banner, Faqs, Work, WorkMethod } from "../components/home";
 
 function Home() {
-
   return (
     <>
       <Banner />
       <WorkMethod />
+      <Work />
+      <Faqs />
     </>
   );
 }
