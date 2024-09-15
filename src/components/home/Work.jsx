@@ -114,11 +114,13 @@ function Work() {
 
   return (
     <Box
+      id="work"
       sx={{
         position: "relative",
         display: "flex",
         alignItems: "center",
-        width: "calc(100vw - 20px)",
+        // width: "calc(100vw - 20px)",
+        // width: { xs: "100vw", md: "calc(100vw - 20px)" },
         backgroundColor: "primary.background",
         mt: "100px",
       }}

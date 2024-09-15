@@ -7,9 +7,11 @@ const theme = createTheme({
     primary: {
       main: "#61fc65",
       background: "#202020",
+      lightGray: "#505050",
     },
     secondary: {
       main: "#f9f9f9",
+      background: "#1A1A1A",
     },
   },
 
@@ -18,12 +20,12 @@ const theme = createTheme({
     normal: {
       fontFamily: "Inter serif, sans-serif",
       letterSpacing: "1px",
-      lineHeight: 1.5
+      lineHeight: 1.5,
     },
     bebus: {
       fontFamily: "Bebas Neue Pro, serif",
       letterSpacing: "1px",
-      lineHeight: 1.5
+      lineHeight: 1.5,
     },
   },
 
@@ -48,6 +50,16 @@ const theme = createTheme({
             "&:hover": {
               backgroundColor: "#4eeb4f",
             },
+            "&:active": {
+              backgroundColor: "#4eeb4f",
+              border: "none",
+              outline: "none",
+            },
+            "&:focus": {
+              backgroundColor: "#4eeb4f",
+              border: "none",
+              outline: "none",
+            },
           }),
           ...(ownerState.variant === "secondary" && {
             backgroundColor: "transparent",
@@ -61,6 +73,18 @@ const theme = createTheme({
               backgroundColor: "#61fc65",
               color: "#000000",
               border: "2px solid #61fc65",
+            },
+            "&:active": {
+              backgroundColor: "#61fc65",
+              color: "#000000",
+              border: "none",
+              outline: "none",
+            },
+            "&:focus": {
+              backgroundColor: "#61fc65",
+              color: "#000000",
+              border: "none",
+              outline: "none",
             },
           }),
           ...(ownerState.variant === "hover-btn" && {
@@ -85,6 +109,36 @@ const theme = createTheme({
                 backgroundColor: "#61fc65",
                 transition: "width 0.3s",
                 transitionTimingFunction: "cubic-bezier(0.25, 1, 0.5, 1)",
+              },
+            },
+            "&:active": {
+              outline: "none",
+              "&::before": {
+                content: '""',
+                position: "absolute",
+                left: 0,
+                bottom: 0,
+                height: "2px",
+                width: "100%",
+                backgroundColor: "#61fc65",
+                transition: "width 0.3s",
+                transitionTimingFunction: "cubic-bezier(0.25, 1, 0.5, 1)",
+                border: "none",
+              },
+            },
+            "&:focus": {
+              outline: "none",
+              "&::before": {
+                content: '""',
+                position: "absolute",
+                left: 0,
+                bottom: 0,
+                height: "2px",
+                width: "100%",
+                backgroundColor: "#61fc65",
+                transition: "width 0.3s",
+                transitionTimingFunction: "cubic-bezier(0.25, 1, 0.5, 1)",
+                border: "none",
               },
             },
           }),

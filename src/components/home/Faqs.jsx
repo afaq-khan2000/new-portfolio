@@ -33,7 +33,8 @@ function Faqs() {
         position: "relative",
         display: "flex",
         alignItems: "center",
-        width: "calc(100vw - 20px)",
+        // width: "calc(100vw - 20px)",
+        // width: { xs: "100vw", md: "calc(100vw - 20px)" },
         backgroundColor: "primary.background",
         mt: "100px",
       }}
@@ -51,7 +52,7 @@ function Faqs() {
             src={FAQ1}
             alt="work process"
             sx={{
-              height: "500px",
+              height: { xs: "200px", md: "500px" },
               width: "100%",
               objectFit: "cover",
               objectPosition: "center 100%",

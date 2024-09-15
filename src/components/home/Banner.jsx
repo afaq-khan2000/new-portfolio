@@ -7,12 +7,20 @@ import useOnScreen from "../../hooks/useOnScreen";
 function Banner() {
   const [availableBtnBgColor, setAvailableBtnBgColor] = useState("primary.main");
 
+  const scrollToContact = (id) => {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
+
   return (
     <Box
       sx={{
         position: "relative",
         height: "100vh",
-        width: "calc(100vw - 20px)",
+        // width: "calc(100vw - 20px)",
+        // width: { xs: "100vw", md: "calc(100vw - 20px)" },
         display: "flex",
       }}
       data-aos="fade-up"
@@ -57,8 +65,8 @@ function Banner() {
                 variant="bebus"
                 sx={{
                   color: "secondary.main",
-                  fontSize: { md: "36px", xs: "24px" },
-                  letterSpacing: "-3px",
+                  fontSize: { md: "36px", xs: "12px" },
+                  letterSpacing: { md: "-3px", xs: "-1px" },
                   fontWeight: 700,
                   marginRight: "20px",
                 }}
@@ -95,7 +103,9 @@ function Banner() {
                 />
                 Available
               </Button>
-              <Button variant="primary">CONTACT</Button>
+              <Button variant="primary" onClick={() => scrollToContact("contact")}>
+                CONTACT
+              </Button>
             </Box>
           </Box>
 
@@ -144,6 +154,7 @@ function Banner() {
               I help entrepreneurs and businesses grow online by designing and building custom WordPress websites. From design to scalable code development, I manage the entire process from A to Z, always incorporating the latest trends and developments.
             </Typography>
             <Button
+              onClick={() => scrollToContact("work-method")}
               variant="hover-btn"
               sx={{
                 fontSize: { xs: "14px", md: "22px" },

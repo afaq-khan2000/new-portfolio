@@ -6,11 +6,13 @@ import { ArrowForwardIos } from "@mui/icons-material";
 function WorkMethod() {
   return (
     <Box
+      id="work-method"
       sx={{
         position: "relative",
         display: "flex",
         alignItems: "center",
-        width: "Calc(100vw - 20px)",
+        // width: "Calc(100vw - 20px)",
+        // width: { xs: "100vw", md: "calc(100vw - 20px)" },
         backgroundColor: "primary.background",
       }}
       data-aos="fade-up"
@@ -107,6 +109,7 @@ function WorkMethod() {
                 With 15 years of experience, customers describe me as a true website specialist who has an appropriate solution for every issue. My pragmatic approach and passion for my work often leads to an end product of high quality, without unnecessary high costs.
               </Typography>
               <Button
+                onClick={() => document.getElementById("work").scrollIntoView({ behavior: "smooth" })}
                 variant="hover-btn"
                 sx={{
                   fontSize: { xs: "14px", md: "22px" },

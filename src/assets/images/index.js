@@ -11,3 +11,5 @@ export { default as Case7 } from './case7.avif';
 export { default as Case8 } from './case8.avif';
 export { default as Case9 } from './case9.avif';
 export { default as FAQ1 } from './faq.jpeg';
+export { default as ContactImg } from './contact.jpeg';
+export { default as DP } from './dp.jpg';

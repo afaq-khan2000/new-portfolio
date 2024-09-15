@@ -19,7 +19,7 @@ export default function Accordian({ items }) {
               boxShadow: "none",
               border: "none",
               "&:before": {
-                backgroundColor: "#505050",
+                backgroundColor: "primary.lightGray",
               },
               padding: "0px",
             }}
