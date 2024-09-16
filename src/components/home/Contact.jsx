@@ -42,8 +42,19 @@ function Contact() {
           zIndex: 2,
         }}
       >
-        <Box sx={{ py: { xs: "10px", md: "30px" }, px: { xs: "10px", lg: "90px" } }}>
-          <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Box
+          sx={{
+            py: { xs: "10px", md: "30px" },
+            px: { xs: "10px", lg: "90px" },
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
             <Box
               sx={{
                 display: "flex",
@@ -83,7 +94,8 @@ function Contact() {
                     mt: "40px",
                   }}
                 >
-                  Got a cool project to discuss or curious to learn more about my approach and services? Let's talk!
+                  Got a cool project to discuss or curious to learn more about
+                  my approach and services? Let's talk!
                 </Typography>
               </Box>
               <Box
@@ -93,7 +105,7 @@ function Contact() {
                   backgroundColor: "primary.background",
                   mt: "40px",
                   height: "150px",
-                //   width: "400px",
+                  //   width: "400px",
                   gap: "20px",
                   //   p: "20px",
                   borderRadius: "10px",
@@ -112,22 +124,92 @@ function Contact() {
                     borderBottomLeftRadius: "10px",
                   }}
                 />
-                <Box sx={{ display: "flex", flexDirection: "column", justifyContent: "center", gap: "10px" }}>
-                  <Typography variant="bebus" sx={{ color: "secondary.main", fontSize: { md: "24px", xs: "20px" }, letterSpacing: "-1px", fontWeight: 700 }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    gap: "10px",
+                  }}
+                >
+                  <Typography
+                    variant="bebus"
+                    sx={{
+                      color: "secondary.main",
+                      fontSize: { md: "24px", xs: "20px" },
+                      letterSpacing: "-1px",
+                      fontWeight: 700,
+                    }}
+                  >
                     AFAQ KHAN
                   </Typography>
-                  <Box sx={{ display: "flex", flexDirection: "column", gap: "5px" }}>
-                    <Typography variant="normal" sx={{ color: "secondary.main", fontSize: { md: "12px", xs: "12px" } }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "5px",
+                    }}
+                  >
+                    <Typography
+
+                      variant="normal"
+                      sx={{
+                        color: "secondary.main",
+                        fontSize: { md: "12px", xs: "12px" },
+                        textDecoration: "none",
+                        "&:hover": {
+                          textDecoration: "none",
+                          color: "secondary.main",
+                        },
+                      }}
+                      component="a"
+                      href="mailto:kafaq885@gmail.com"
+                    >
                       kafaq885@gmail.com
                     </Typography>
-                    <Typography variant="normal" sx={{ color: "secondary.main", fontSize: { md: "12px", xs: "12px" } }}>
+                    <Typography
+                      variant="normal"
+                      sx={{
+                        color: "secondary.main",
+                        fontSize: { md: "12px", xs: "12px" },
+                      }}
+                    >
                       +92 321 1467307
                     </Typography>
                   </Box>
                   <Box sx={{ display: "flex", gap: "10px" }}>
-                    <Instagram onClick={() => window.open("https://www.instagram.com/afaq_khan2000/")} sx={{ color: "secondary.main", cursor: "pointer", fontSize: "20px" }} />
-                    <GitHub onClick={() => window.open("https://github.com/afaq-khan2000")} sx={{ color: "secondary.main", cursor: "pointer", fontSize: "20px" }} />
-                    <LinkedIn onClick={() => window.open("https://www.linkedin.com/in/afaq-khan-2a327a198/")} sx={{ color: "secondary.main", cursor: "pointer", fontSize: "20px" }} />
+                    <Instagram
+                      onClick={() =>
+                        window.open("https://www.instagram.com/afaq_khan2000/")
+                      }
+                      sx={{
+                        color: "secondary.main",
+                        cursor: "pointer",
+                        fontSize: "20px",
+                      }}
+                    />
+                    <GitHub
+                      onClick={() =>
+                        window.open("https://github.com/afaq-khan2000")
+                      }
+                      sx={{
+                        color: "secondary.main",
+                        cursor: "pointer",
+                        fontSize: "20px",
+                      }}
+                    />
+                    <LinkedIn
+                      onClick={() =>
+                        window.open(
+                          "https://www.linkedin.com/in/afaq-khan-2a327a198/"
+                        )
+                      }
+                      sx={{
+                        color: "secondary.main",
+                        cursor: "pointer",
+                        fontSize: "20px",
+                      }}
+                    />
                   </Box>
                 </Box>
               </Box>
