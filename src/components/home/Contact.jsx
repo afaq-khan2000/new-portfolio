@@ -62,6 +62,7 @@ function Contact() {
                 width: { xs: "100%", md: "50%" },
                 pr: { xs: "0px", lg: "180px" },
               }}
+              data-aos="fade-right"
             >
               <Box sx={{ display: "flex", flexDirection: "column" }}>
                 <Typography
@@ -94,8 +95,7 @@ function Contact() {
                     mt: "40px",
                   }}
                 >
-                  Got a cool project to discuss or curious to learn more about
-                  my approach and services? Let's talk!
+                  Got a cool project to discuss or curious to learn more about my approach and services? Let's talk!
                 </Typography>
               </Box>
               <Box
@@ -151,7 +151,6 @@ function Contact() {
                     }}
                   >
                     <Typography
-
                       variant="normal"
                       sx={{
                         color: "secondary.main",
@@ -159,7 +158,7 @@ function Contact() {
                         textDecoration: "none",
                         "&:hover": {
                           textDecoration: "none",
-                          color: "secondary.main",
+                          color: "primary.main",
                         },
                       }}
                       component="a"
@@ -179,9 +178,7 @@ function Contact() {
                   </Box>
                   <Box sx={{ display: "flex", gap: "10px" }}>
                     <Instagram
-                      onClick={() =>
-                        window.open("https://www.instagram.com/afaq_khan2000/")
-                      }
+                      onClick={() => window.open("https://www.instagram.com/afaq_khan2000/")}
                       sx={{
                         color: "secondary.main",
                         cursor: "pointer",
@@ -189,9 +186,7 @@ function Contact() {
                       }}
                     />
                     <GitHub
-                      onClick={() =>
-                        window.open("https://github.com/afaq-khan2000")
-                      }
+                      onClick={() => window.open("https://github.com/afaq-khan2000")}
                       sx={{
                         color: "secondary.main",
                         cursor: "pointer",
@@ -199,11 +194,7 @@ function Contact() {
                       }}
                     />
                     <LinkedIn
-                      onClick={() =>
-                        window.open(
-                          "https://www.linkedin.com/in/afaq-khan-2a327a198/"
-                        )
-                      }
+                      onClick={() => window.open("https://www.linkedin.com/in/afaq-khan-2a327a198/")}
                       sx={{
                         color: "secondary.main",
                         cursor: "pointer",
@@ -214,7 +205,7 @@ function Contact() {
                 </Box>
               </Box>
             </Box>
-            <Box sx={{ width: "50%", display: { xs: "none", md: "block" } }}>
+            <Box sx={{ width: "50%", display: { xs: "none", md: "block" } }} data-aos="fade-left">
               <Box
                 component="img"
                 src={ContactImg}

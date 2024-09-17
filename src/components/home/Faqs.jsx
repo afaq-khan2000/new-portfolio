@@ -59,6 +59,7 @@ function Faqs() {
               filter: "grayscale(100%) brightness(0.5)",
               borderRadius: "10px",
             }}
+            data-aos="fade-up"
           />
 
           <Box
@@ -69,6 +70,7 @@ function Faqs() {
               mt: "50px",
               flexDirection: { xs: "column", md: "row" },
             }}
+            data-aos="fade-right"
           >
             <Box
               sx={{

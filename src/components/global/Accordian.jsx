@@ -9,7 +9,7 @@ import { Box } from "@mui/material";
 
 export default function Accordian({ items }) {
   return (
-    <Box>
+    <Box data-aos="fade-left">
       {items.map((data, index) => {
         return (
           <Accordion
