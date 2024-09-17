@@ -48,9 +48,8 @@ function Banner() {
         }}
       >
         <Box sx={{ py: { xs: "10px", md: "30px" }, px: { xs: "10px", md: "30px" } }}>
-          <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, justifyContent: { xs: "center", md: "space-between" }, alignItems: { xs: "center", md: "center" } }}>
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              {/* <Box
+          <Box sx={{ display: "flex", flexDirection: { xs: "row", md: "row" }, justifyContent: { xs: "space-between", md: "space-between" }, alignItems: { xs: "center", md: "center" } }}>
+            {/* <Box
                 component="img"
                 src={NavLogo}
                 alt="logo"
@@ -61,52 +60,20 @@ function Banner() {
                   marginRight: "20px",
                 }}
               /> */}
-              <Typography
-                variant="bebus"
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { md: "36px", xs: "12px" },
-                  letterSpacing: { md: "-3px", xs: "-1px" },
-                  fontWeight: 700,
-                  marginRight: "20px",
-                }}
-              >
-                AFAQ KHAN
-              </Typography>
-              <Typography
-                variant="normal"
-                sx={{
-                  color: "secondary.main",
-                  fontSize: { xs: "12px", md: "14px" },
-                }}
-              >
-                Web Design & Development since 2010
-              </Typography>
-            </Box>
-            <Box
+            <Typography
+              // variant="bebus"
               sx={{
-                display: "flex",
-                gap: "10px",
-                alignSelf: { xs: "center", md: "center" },
-                mt: { xs: "20px", md: 0 },
+                color: "primary.main",
+                fontSize: { md: "48px", xs: "36px" },
+                letterSpacing: "1px",
+                fontWeight: 700,
               }}
             >
-              <Button variant="secondary" onMouseEnter={() => setAvailableBtnBgColor("#000")} onMouseLeave={() => setAvailableBtnBgColor("primary.main")}>
-                <Box
-                  sx={{
-                    width: "10px",
-                    height: "10px",
-                    borderRadius: "50%",
-                    backgroundColor: availableBtnBgColor,
-                    marginRight: "10px",
-                  }}
-                />
-                Available
-              </Button>
-              <Button variant="primary" onClick={() => scrollToContact("contact")}>
-                CONTACT
-              </Button>
-            </Box>
+              AK.
+            </Typography>
+            <Button variant="primary" onClick={() => scrollToContact("contact")}>
+              CONTACT
+            </Button>
           </Box>
 
           {/* TEXT */}
@@ -130,7 +97,7 @@ function Banner() {
                   lineHeight: 1,
                 }}
               >
-                WEBSITE DESIGNER
+                FULL STACK
               </Typography>
               <Typography
                 sx={{
@@ -140,7 +107,7 @@ function Banner() {
                   lineHeight: 1,
                 }}
               >
-                & DEVELOPER
+                WEB DEVELOPER
               </Typography>
             </Box>
             <Typography
@@ -151,7 +118,7 @@ function Banner() {
                 fontWeight: 400,
               }}
             >
-              I help entrepreneurs and businesses grow online by designing and building custom WordPress websites. From design to scalable code development, I manage the entire process from A to Z, always incorporating the latest trends and developments.
+              I am a Full Stack Web Developer with a passion for creating beautiful and functional websites. I have a strong foundation in web development technologies and programming languages such as HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and more. I am always eager to learn new technologies and improve my skills to create better user experiences.
             </Typography>
             <Button
               onClick={() => scrollToContact("work-method")}
@@ -160,7 +127,7 @@ function Banner() {
                 fontSize: { xs: "14px", md: "22px" },
               }}
             >
-              DISCOVER MY WORKING METHOD
+              LEARN MORE ABOUT ME
               <ArrowForwardIos sx={{ fontSize: { xs: "14px", md: "22px" }, ml: "10px" }} />
             </Button>
           </Box>

@@ -6,24 +6,24 @@ import Accordian from "../global/Accordian";
 function Faqs() {
   const items = [
     {
-      title: "What is your hourly rate?",
-      description: "My hourly rate is $100. I also offer fixed-price packages for specific services. Please contact me for more information.",
+      title: "What services do you offer?",
+      description: "I specialize in full stack web development, creating responsive websites, and web applications. My services include front-end and back-end development, API integration, and more.",
     },
     {
-      title: "What is your availability?",
-      description: "I'm currently available for new projects. My schedule is flexible, and I can adjust it to meet your needs.",
+      title: "What technologies do you work with?",
+      description: "I work with a wide range of technologies, including React, Node.js, Express, MongoDB, Sequelize, and other modern tools to build robust and scalable applications.",
     },
     {
-      title: "Do you offer discounts for long-term projects?",
-      description: "Yes, I offer discounts for long-term projects. Please contact me to discuss your project requirements and budget.",
+      title: "Can you work on existing projects?",
+      description: "Yes, I can help you improve or expand upon your existing projects, whether it’s updating the design, adding new features, or optimizing performance.",
     },
     {
-      title: "What is your refund policy?",
-      description: "I offer a 100% money-back guarantee if you're not satisfied with my work. Your satisfaction is my top priority.",
+      title: "How long does it take to complete a project?",
+      description: "The timeline for a project depends on its complexity and scope. After understanding your requirements, I can provide an accurate estimate of the completion time.",
     },
     {
       title: "Do you provide ongoing support after the project is completed?",
-      description: "Yes, I provide ongoing support and maintenance services after the project is completed. I'm here to help you succeed.",
+      description: "Yes, I offer ongoing maintenance and support to ensure your website or application remains up-to-date and runs smoothly after launch.",
     },
   ];
 

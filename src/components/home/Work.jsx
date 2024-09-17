@@ -162,6 +162,7 @@ function Work() {
                 color: "secondary.main",
                 fontSize: { md: "17px", xs: "14px" },
                 fontWeight: 700,
+                mb: { xs: "20px", md: "40px" },
               }}
             >
               My portfolio now consists of some 250+ completed websites. Below is a sampling of recent projects I am proud to have delivered.

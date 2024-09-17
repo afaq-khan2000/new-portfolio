@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Box, Button, Container, Typography } from "@mui/material";
-import { WorkProcess } from "../../assets/images";
+import { DP, WorkProcess } from "../../assets/images";
 import { ArrowForwardIos } from "@mui/icons-material";
 
 function WorkMethod() {
@@ -33,13 +33,13 @@ function WorkMethod() {
                 {/* Vertical Text */}
                 <Box sx={{ width: "1px", height: "70px", backgroundColor: "primary.main" }} />
                 <Typography variant="bebus" sx={{ color: "secondary.main", fontSize: { xs: "12px", md: "14px" }, writingMode: "vertical-rl", textOrientation: "sideways-lr", transform: "rotate(180deg)", letterSpacing: "2px", fontWeight: 700 }}>
-                  Freelance web designer & developer
+                  Full stack website developer
                   {/* a vertical green line */}
                 </Typography>
               </Box>
               <Box
                 component={"img"}
-                src={WorkProcess}
+                src={DP}
                 alt="work process"
                 sx={{
                   filter: "grayscale(100%)",
@@ -64,7 +64,7 @@ function WorkMethod() {
                     lineHeight: 1,
                   }}
                 >
-                  VALUABLE WEBSITES
+                  I'M YOUR WEB DEVELOPER
                 </Typography>
                 <Typography
                   sx={{
@@ -74,7 +74,7 @@ function WorkMethod() {
                     lineHeight: 1,
                   }}
                 >
-                  MADE WITH{" "}
+                  DELIVERING WITH{" "}
                   <Box component="span" sx={{ color: "primary.main" }}>
                     PASSION
                   </Box>
@@ -97,7 +97,7 @@ function WorkMethod() {
                   fontSize: { xs: "12px", md: "14px" },
                 }}
               >
-                By working with me you will experience the quality of an agency, combined with personal contact and short lines of communication of a freelancer. I design and develop all my projects fully customized, perfectly tailored to the specific needs of my clients.
+                I am a full stack web developer with a passion for creating beautiful, responsive, and user-friendly websites. I am dedicated to delivering high-quality work that meets your needs and exceeds your expectations. Let's work together to bring your vision to life!
               </Typography>
               <Typography
                 variant="normal"
@@ -106,7 +106,7 @@ function WorkMethod() {
                   fontSize: { xs: "12px", md: "14px" },
                 }}
               >
-                With 15 years of experience, customers describe me as a true website specialist who has an appropriate solution for every issue. My pragmatic approach and passion for my work often leads to an end product of high quality, without unnecessary high costs.
+                With expertise in both front-end and back-end development, I ensure that your website not only looks great but also functions flawlessly. I stay up-to-date with the latest technologies to provide modern, scalable, and efficient solutions. Whether it’s building from scratch or enhancing an existing project, I’m here to turn your ideas into reality.
               </Typography>
               <Button
                 onClick={() => document.getElementById("work").scrollIntoView({ behavior: "smooth" })}
